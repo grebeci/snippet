@@ -56,16 +56,20 @@ jobs:
           echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+          
+      - name: Setup Git Infomation
+        run: | 
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
-
+          
       - name: Install dependencies
         run: |
           npm install hexo-cli -g
           npm install
-          # 根据你安装的组件进行安装
-          npm install hexo-deployer-git --save
+    
+      - name: Deploy Hexo 
+        run: |
           hexo clean
-          hexo g
-          hexo d
-                                                                            
+          hexo generate 
+          hexo deploy  
+
