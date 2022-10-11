@@ -67,7 +67,7 @@ jobs:
           npm install hexo-cli -g
           npm install
           # 根据你安装的组件进行安装
-          npm instalhexo-deployer-git --save
+          npm install hexo-deployer-git --save
           hexo clean
           hexo g
           hexo d
