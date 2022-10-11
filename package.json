@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start": "yuque-hexo clean && yuque-hexo sync",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
@@ -11,6 +12,13 @@
   "hexo": {
     "version": "6.3.0"
   },
+  "yuqueConfig": {
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "grebeci",
+    "repo": "ke4ums",
+    "mdNameFormat": "title",
+    "postPath": "source/_posts/yuque"
+  }
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-generator-archive": "^1.0.0",
