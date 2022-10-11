@@ -67,8 +67,8 @@ jobs:
           npm install hexo-cli -g
           npm install
           # 根据你安装的组件进行安装
-          npm uninstall hexo-generator-index --save
-          hexo-deployer-git --save
-          # 复制中文语言包，解决菜单英文的问题
-          cp zh-CN.yml node_modules/hexo-theme-next/languages/
+          npm instalhexo-deployer-git --save
+          hexo clean
+          hexo g
+          hexo d
                                                                             
