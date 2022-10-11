@@ -18,7 +18,10 @@
     "repo": "ke4ums",
     "mdNameFormat": "title",
     "postPath": "source/_posts/yuque"
-  }
+  },
+  "devDependencies": {
+    "yuque-hexo": "^1.3.1"
+  },
   "dependencies": {
     "hexo": "^6.3.0",
     "hexo-generator-archive": "^1.0.0",
