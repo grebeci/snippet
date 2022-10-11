@@ -103,6 +103,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/grebeci/snippet.git
+  repo: git@github.com:grebeci/snippet.git
   branch: main
-  token: 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
