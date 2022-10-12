@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: '冰山一角'
+title: 'snippet'
 subtitle: ''
 description: ''
 keywords:
 author: 'grebeci'
-language: 'zh-CN'
+language: 'en'
 timezone: 'Asia/Shanghai'
 
 # URL
