@@ -36,8 +36,6 @@ b=$a
 
 ​    print:  env | grep 'HOME'
 
-
-
 ### array
 
 ##### 1. indexed array
@@ -86,10 +84,7 @@ wordcount=(['aaa']=1 ['bbb']=2)
 echo ${wordcount['name']}
 ```
 
-
-
 ### String
-
 ##### 1. substr
 
 ```bash
@@ -137,8 +132,6 @@ ${varname^^}
 ${varname,,}
 ```
 
-
-
 ### IO
 
 STDIN : 标准输入  0  /dev/stdin
@@ -165,8 +158,6 @@ command >> output-file 			# appending
 
 [Heredoc 入门 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/93993398)
 
-
-
 ### Branches
 
 ##### if
@@ -184,8 +175,6 @@ fi
 ```bash
 if [ condition1 ];then command_series1 ; fi
 ```
-
-
 
 ##### case  command
 
@@ -206,8 +195,6 @@ esac
 [[  ]] && command  # if true then
 [[  ]] || command  # if false then
 ```
-
-
 
 ### Conditional Expressions
 
@@ -282,8 +269,6 @@ file modified time
 [[ condition1 || condition2 ]]
 ```
 
-
-
 ### Loops
 
 #### vars-like for
@@ -311,8 +296,6 @@ echo {1..10..1} #  generate sequence
 array=($(seq 10)) # 转成 array
 ```
 
-
-
 #### for in C-like syntax
 
 ```bash
@@ -321,8 +304,6 @@ for ((a=1; a<=LIMIT; a++)); do
   echo "$a "
 done
 ```
-
-
 
 #### **while**
 
@@ -335,8 +316,6 @@ while ((a<=LIMIT)); do
 done
 ```
 
-
-
 #### **until**
 
 ```bash
@@ -347,8 +326,6 @@ util ((a > LIMIT)); do
     ((a += 1))
 done
 ```
-
-
 
 ### Function
 
@@ -376,8 +353,6 @@ fun_name arg1
 arg1=hello
 ```
 
-
-
 ### Fork
 
 子进程 `command` (command)
@@ -399,8 +374,6 @@ arg1=hello
 ```bash
 nohup command > log 2>&1 
 ```
-
-
 
 ### Debugging
 
@@ -424,10 +397,6 @@ use GNU parallel
 2. Avoid using magic number
 3. Use exit codes in a systematic and meaningful way
 4. Use standardized parameter flags for script invocation
-
-
-
-
 
 #### 数值运算
 
