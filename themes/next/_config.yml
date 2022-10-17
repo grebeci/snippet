@@ -190,7 +190,7 @@ toc:
   wrap: true
   expand_all: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  max_depth: 3
+  max_depth: 6
 
 # ---------------------------------------------------------------
 # Footer Settings
