@@ -8,9 +8,7 @@ subtitle: ""
 description: ""
 keywords:
 author: grebeci
-language:
-  - zh-CN
-  - en
+language: en
 timezone: "Asia/Shanghai"
 
 # URL
